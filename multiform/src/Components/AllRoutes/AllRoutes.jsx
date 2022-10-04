@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Page1 from "../Form/Page1";
-import Page2 from "../Form/Page2";
-import Page3 from "../Form/Page3";
-import Page4 from "../Form/Page4";
+import Page1 from "../Form-pages/Page1";
+import Page2 from "../Form-pages/Page2";
+import Page3 from "../Form-pages/Page3";
+import Page4 from "../Form-pages/Page4";
 
-const MainRoutes = ({ setStep }) => {
+const AllRoutes = ({ setStep }) => {
   return (
     <>
       <Routes>
@@ -27,4 +27,4 @@ const MainRoutes = ({ setStep }) => {
   );
 };
 
-export default MainRoutes;
+export default AllRoutes;
