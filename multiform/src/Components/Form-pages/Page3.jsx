@@ -1,14 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext} from "react";
 import "./page.css";
 import { useNavigate } from "react-router-dom";
 import { StepContext } from "../../Context/StepContext";
 
 const Page3 = () => {
   const { step, setStep } = useContext(StepContext);
-
-  // const handle= () => {
-    
-  // }
+ 
 
   const navigate = useNavigate();
   const hendelClick = () => {
@@ -25,8 +22,8 @@ const Page3 = () => {
 
       <div className="stack">
         <div className="check-flex">
-          <div className="checkbox">
-            <span className="material-symbols-rounded">person</span>
+          <div className="checkbox" id="border1">
+            <span className="material-symbols-rounded" id="logo1">person</span>
             <h6>For myself</h6>
             <p>Write better. Think more clearly. Stay organized</p>
           </div>

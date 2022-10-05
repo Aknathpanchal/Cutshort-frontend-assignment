@@ -12,10 +12,15 @@ body{
   font-family: 'Inter', sans-serif;
 }
 input:hover{
-outline:0.2rem solid #664DE5;
-/* &#icons{
+outline:0.1rem solid #664DE5;
+}
+
+.checkbox:hover{
+  outline:0.1rem solid #664DE5;
+}
+
+.checkbox:hover > .material-symbols-rounded{
   color: #664DE5;
-  } */
 }
 
 .day{

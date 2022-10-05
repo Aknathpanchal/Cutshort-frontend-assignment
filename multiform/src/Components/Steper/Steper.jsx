@@ -1,16 +1,11 @@
 import React, { useContext } from "react";
 import "./steper.css";
 import { StepContext } from "../../Context/StepContext";
-
-//  import { createContext, useState } from "react";
-// import { useContext } from "react";
-
- 
+import { useNavigate } from "react-router-dom";
 
 const Steper = () => {
-  // const StepContext = createContext();
+  const navigate = useNavigate();
   const { step, setStep } = useContext(StepContext);
-  // var { step } = useContext(StepContext);
 
   let borderclr = "#EDF2F7";
   let c1 = step >= 1 ? "#664DE5" : borderclr;
@@ -40,10 +35,18 @@ const Steper = () => {
         <div style={{backgroundColor:c4}}/>
       </div>
 
-      <div className="no-box no-box1" value="1" style={{borderColor:borderclr,color:t1,background:b1}} onClick={(e)=>{setStep(e.target.value)}}>1</div>
-      <div className="no-box no-box2" value="2" style={{borderColor:borderclr,color:t2,background:b2}}>2</div>
-      <div className="no-box no-box3" value="3" style={{borderColor:borderclr,color:t3,background:b3}}>3</div>
-      <div className="no-box no-box4" value="4" style={{borderColor:borderclr,color:t4,background:b4}}>4</div>
+      <div className="no-box no-box1" value="1" style={{borderColor:borderclr,color:t1,background:b1}} onClick={(e)=>{
+        setStep(1)
+        navigate("/")}}>1</div>
+      <div className="no-box no-box2" value="2" style={{borderColor:borderclr,color:t2,background:b2}} onClick={(e)=>{
+        setStep(2)
+        navigate("/page2")}}>2</div>
+      <div className="no-box no-box3" value="3" style={{borderColor:borderclr,color:t3,background:b3}} onClick={(e)=>{
+        setStep(3)
+        navigate("/page3")}}>3</div>
+      <div className="no-box no-box4" value="4" style={{borderColor:borderclr,color:t4,background:b4}} onClick={(e)=>{
+        setStep(4)
+        navigate("/page4")}}>4</div>
 
     </div>
   );

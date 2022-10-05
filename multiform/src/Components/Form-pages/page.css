@@ -119,6 +119,7 @@ input {
 
 .checkbox {
   border: 1px solid #747478;
+  /* outline: #405cf5; */
   border-radius: 0.4rem;
   padding: 0.9rem;
   display: flex;
